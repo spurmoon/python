@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UIShellClass</class>
+ <widget class="QMainWindow" name="UIShellClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>525</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>飞行器碰撞风险分析-SCRA</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox_SDModel">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>185</width>
+      <height>120</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>空间碎片环境模型</string>
+    </property>
+    <widget class="QWidget" name="widget_SDModel" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>165</width>
+       <height>90</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_SDModel">
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_Year">
+        <property name="currentIndex">
+         <number>16</number>
+        </property>
+        <property name="maxVisibleItems">
+         <number>6</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>2000</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2001</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2002</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2003</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2004</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2005</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2006</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2007</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2008</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2009</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2010</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2011</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2012</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2013</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2014</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2015</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2016</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2017</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2018</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2019</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2020</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2021</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2022</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2023</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2024</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2025</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2026</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2027</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2028</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2029</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2030</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBox_SDModel">
+        <item>
+         <property name="text">
+          <string>ORDEM2000</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_Year">
+        <property name="text">
+         <string>年份：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_Diameter">
+        <property name="text">
+         <string>碎片直径：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_Diameter">
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>10um</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>100um</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1mm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1cm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10cm</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1m</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_SCPeremeters">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>315</width>
+      <height>180</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>飞行器轨道参数设置</string>
+    </property>
+    <widget class="QWidget" name="widget_SCParameter" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>300</width>
+       <height>150</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_SCParemeters" columnstretch="1,0,0,0">
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_Argp">
+        <property name="text">
+         <string>0</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEdit_Seg">
+        <property name="text">
+         <string>100</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_Inc">
+        <property name="text">
+         <string>51.6</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_Inc">
+        <property name="text">
+         <string>倾角(0~180)：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_Seg">
+        <property name="text">
+         <string>轨道分段数：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QCheckBox" name="checkBox_SMA_Ecc">
+        <property name="text">
+         <string>经典根数</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_Ecc_Peri">
+        <property name="text">
+         <string>近地点高度(Km)：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_Argp">
+        <property name="text">
+         <string>近地点幅角(0~360)：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_SMA_Apo">
+        <property name="text">
+         <string>400</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_SMA_Apo">
+        <property name="text">
+         <string>远地点高度(Km)：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QCheckBox" name="checkBox_Argp">
+        <property name="text">
+         <string>随机</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_Ecc_Peri">
+        <property name="text">
+         <string>400</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_Buttons" native="true">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>195</y>
+      <width>340</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_Apply">
+       <property name="text">
+        <string>应用</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_SDModel">
+       <property name="text">
+        <string>模型测算</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Sample">
+       <property name="text">
+        <string>样本生成</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_RA">
+       <property name="text">
+        <string>风险评估</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>525</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="Menu_File">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_New"/>
+    <addaction name="action_Exit"/>
+   </widget>
+   <addaction name="Menu_File"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_New">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="action_Exit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEdit_SMA_Apo</tabstop>
+  <tabstop>checkBox_SMA_Ecc</tabstop>
+  <tabstop>lineEdit_Ecc_Peri</tabstop>
+  <tabstop>lineEdit_Inc</tabstop>
+  <tabstop>lineEdit_Argp</tabstop>
+  <tabstop>lineEdit_Seg</tabstop>
+  <tabstop>comboBox_SDModel</tabstop>
+  <tabstop>comboBox_Year</tabstop>
+ </tabstops>
+ <resources>
+  <include location="uishell.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>checkBox_SMA_Ecc</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>UIShellClass</receiver>
+   <slot>sma_Ecc_fromto_Apo_Peri(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>310</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>172</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_SDModel</sender>
+   <signal>clicked()</signal>
+   <receiver>UIShellClass</receiver>
+   <slot>sdModelTest()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Apply</sender>
+   <signal>clicked()</signal>
+   <receiver>UIShellClass</receiver>
+   <slot>applySettings()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>199</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Sample</sender>
+   <signal>clicked()</signal>
+   <receiver>UIShellClass</receiver>
+   <slot>genSample()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_RA</sender>
+   <signal>clicked()</signal>
+   <receiver>UIShellClass</receiver>
+   <slot>riskAssessment()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>435</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>sma_Ecc_fromto_Apo_Peri(int)</slot>
+  <slot>sdModelTest()</slot>
+  <slot>applySettings()</slot>
+  <slot>genSample()</slot>
+  <slot>riskAssessment()</slot>
+ </slots>
+</ui>

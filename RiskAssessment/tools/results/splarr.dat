@@ -1,0 +1,10 @@
+The three arrays xa, ya, y2a are given here.
+They are all of length n. See Numerical Recipes
+section 3.3 on how to utilize the arrays to
+get a y from a x, where x is Log10(diam in cm)
+and y is Log10(flux in no/m**2/year).
+x is valid between 0.001 cm and 100 cm.
+  Array length n:  6
+  Array xa: -3.0000D+00 -2.0000D+00 -1.0000D+00  0.0000D+00  1.0000D+00  2.0000D+00
+  Array ya:  2.9450D+00  1.3430D+00 -1.3370D+00 -5.3920D+00 -6.4730D+00 -6.7650D+00
+  Array y2a:  0.0000D+00 -8.2209D-01 -3.1797D+00  5.2907D+00 -1.3918D-01  0.0000D+00

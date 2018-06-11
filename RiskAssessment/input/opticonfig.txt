@@ -1,0 +1,16 @@
+[optimization configure]
+# penalty factor
+fpenalty = 1000.
+
+# DE parameters
+# generation limit
+ngen = 200
+# crossover ratio
+cr = 0.9
+# scale factor
+f = 0.6
+# population size
+mu = 50
+# left and right limit
+low= 0 ,0,0,0,0,0,0,0,0,0
+up= 1,1,1,1,1,1,1,1,1,1
